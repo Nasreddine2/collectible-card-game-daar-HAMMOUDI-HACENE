@@ -1,0 +1,19 @@
+# Node modules
+node_modules/
+
+# Compiled contract artifacts
+artifacts/
+cache/
+
+# Environment variables
+.env
+
+# Hardhat cache and temporary files
+hardhat.cache/
+coverage/
+coverage.json
+typechain/
+
+# Yarn files
+yarn-error.log
+.yarn-integrity

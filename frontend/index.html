@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&family=Sometype+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+      integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gHwfq1xCw2zY2k5Vmdt9YFVt9wx0PFSnY5N7EGz4tEs1E4kp1UNyxZ0hMQPZVlW"
+      crossorigin="anonymous"
+    />
+
+    <title>Pokémon TCG</title>
+  </head>
+  <style>
+    .bodyColor {
+      background-color: #bbb;
+    }
+
+    /* styles.css */
+    .cards-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-gap: 10px;
+    }
+
+    .card {
+      width: 200px;
+      height: 300px;
+      position: relative;
+      transform-style: preserve-3d;
+      transition: transform 0.5s;
+    }
+
+    .card.flipped {
+      transform: rotateY(180deg);
+    }
+
+    .image-text-container {
+      display: flex;
+      align-items: center;
+      /* Align items vertically in the center */
+    }
+
+    .text-container {
+      position: absolute;
+      margin-left: 10%;
+      margin-bottom: 5%;
+    }
+
+    .image-text-container img {
+      /* Adjust the maximum width of the image as needed */
+      margin-right: 10px;
+      width: 40%;
+
+      margin-top: -5%;
+      /* Add spacing between the image and text */
+    }
+
+    .titre_collection {
+      font-weight: bold;
+      color: aliceblue;
+      font-size: 30px;
+      width: 100%;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .date_titre {
+      font-family: 'Poppins', sans-serif;
+      font-size: 14px;
+    }
+
+    .box-number {
+      background-image: url('./public/image-bg.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    .box {
+      flex: 1;
+      border: 1px solid #3a2a4b;
+      padding: 10px;
+      margin: 10px;
+      /* Add margin between divs */
+      border-radius: 10px;
+      /* Add border-radius */
+      background-color: #3a2a4b;
+      text-align: center;
+      color: aliceblue;
+    }
+
+    .font_titre_count {
+      font-family: 'Poppins', sans-serif;
+      font-size: 30px;
+    }
+  </style>
+
+  <body class="bodyColor">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
