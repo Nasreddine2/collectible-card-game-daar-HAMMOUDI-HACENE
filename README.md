@@ -20,7 +20,7 @@ Bienvenue sur **Pokémon NFT Marketplace**, une plateforme décentralisée pour 
 
 - **Frontend** : React, Material-UI
 - **Blockchain** : Solidity pour les contrats intelligents, déployés sur Ethereum
-- **Backend** : MetaMask pour l'authentification
+- **Backend** : Nodejs pour la récupération des métadonnées des cartes Pokemon. MetaMask pour l'authentification
 - **Smart Contracts** : OpenZeppelin pour la gestion des contrats ERC721 et ERC721Enumerable
 
 ## Installation et Déploiement
@@ -42,6 +42,7 @@ Assurez-vous d'avoir installé :
    ```
    Installez les dépendances et lancement application :
    Faudra ouvrir 3 Temrinaux :
+
    **Terminal Contrats**
    ```bash
    cd contrats
